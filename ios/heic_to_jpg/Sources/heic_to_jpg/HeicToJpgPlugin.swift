@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SwiftHeicToJpgPlugin: NSObject, FlutterPlugin {
+public class HeicToJpgPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "heic_to_jpg", binaryMessenger: registrar.messenger())
-    let instance = SwiftHeicToJpgPlugin()
+    let instance = HeicToJpgPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
